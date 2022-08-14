@@ -1,6 +1,6 @@
 AUTHOR = 'hannawizmonsters'
-SITENAME = 'hanna.github.io'
-SITEURL = 'hanna.github.io/src/output'
+SITENAME = 'hannawizmonsters.github.io'
+SITEURL = ''
 
 PATH = 'content'
 
@@ -14,6 +14,8 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+
+THEME = 'themes/voce'
 
 # Blogroll
 LINKS = (('Pelican', 'https://getpelican.com/'),
