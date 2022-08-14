@@ -1,6 +1,6 @@
 AUTHOR = 'hannawizmonsters'
 SITENAME = 'hanna.github.io'
-SITEURL = 'hanna.github.io'
+SITEURL = 'hanna.github.io/src/output'
 
 PATH = 'content'
 
