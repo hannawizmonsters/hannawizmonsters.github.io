@@ -1,8 +1,0 @@
-[input]
-base_directory = "/Users/hannasakuragi/Documents/GitHub/hanna.github.io/src/output"
-html_selector = "main"
-
-[[input.files]]
-path = "my-very-first-pelican.html"
-url = "/my-very-first-pelican.html"
-title = "Pelican をいじってみる"
