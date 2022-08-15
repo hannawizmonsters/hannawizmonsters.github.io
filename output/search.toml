@@ -1,5 +1,5 @@
 [input]
-base_directory = "/Users/hannasakuragi/Documents/GitHub/hannawizmonsters.github.io/src/output"
+base_directory = "output"
 html_selector = "main"
 
 [[input.files]]
