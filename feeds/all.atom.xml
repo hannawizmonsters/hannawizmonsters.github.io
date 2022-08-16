@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>hannawizmonsters.github.io</title><link href="hannawizmonsters.github.io/" rel="alternate"></link><link href="hannawizmonsters.github.io/feeds/all.atom.xml" rel="self"></link><id>hannawizmonsters.github.io/</id><updated>2022-08-15T00:00:00+09:00</updated><entry><title>Pelican をいじってみる</title><link href="hannawizmonsters.github.io/my-very-first-pelican.html" rel="alternate"></link><published>2022-08-15T00:00:00+09:00</published><updated>2022-08-15T00:00:00+09:00</updated><author><name>hannawizmonsters</name></author><id>tag:None,2022-08-15:hannawizmonsters.github.io/my-very-first-pelican.html</id><summary type="html">&lt;main&gt;
+たまたま仕事で必要になったので、せっかくならと、備忘録作成がてら Pelican で自分のサイトを作ってみようと試みる。ち …&lt;/main&gt;</summary><content type="html">&lt;main&gt;
+たまたま仕事で必要になったので、せっかくならと、備忘録作成がてら Pelican で自分のサイトを作ってみようと試みる。ちなみに Pelican は他のエンジニアさんが用意してくれていた環境上で、テンプレートをいじったりデザイン反映したり、という程度で、Pelican そのものや python の知識はまるで皆無に等しい状態。要はまっさら、頭の中からっぽなんだぜ。
+
+## まずは仮想環境を用意
+
+何となく、これまで社内でもそうだったし、自分なりにググってみても「仮想環境で動かす」のが「お作法」的な感じになってるんやなという肌感があったので、venv を使って仮想環境を用意することに。何で venv やねんと思ってこれまた調べてみると、Python3 系にそういうモジュールが最初からインストールされているかららしい。何かとりあえず、すごく便利で優秀だということだけは分かる。
+
+自分の環境だと Python は 2系 と 3系 両方インストールされていて、&lt;code&gt;python&lt;/code&gt; コマンド使おうとすると「2系 と 3系 どっち使うねん」と怒られるので、&lt;code&gt;python3&lt;/code&gt; とガチ指定する必要があった。（2系 消せばいいのだろうか？いやもう怖いからいじりとうない。爆）
+
+&lt;pre&gt;python3 -m venv /venv置きたいパス指定&lt;/pre&gt;
+
+これでもう仮想環境用のディレクトリが作成される。すごい。ホント魔法 ← GUI人間あるある。さらに仮想環境をアクティブにする。
+
+&lt;pre&gt;
+cd /venv置きたいパス指定&lt;br&gt;
+source ./bin/activate
+&lt;/pre&gt;
+
+これでターミナルに表示される &lt;code&gt;username $&lt;/code&gt; が &lt;code&gt;(venv) username $&lt;/code&gt; になればOKらしい。次に進む。
+
+## Pelican インストール
+
+&lt;a href="https://getpelican.com/" target="_blank"&gt;Pelican 公式サイト&lt;/a&gt;が大幅リニューアル（アプデ？）されていて、めっちゃデザイナーフレンドリーになったんだけれど、&lt;a href="https://getpelican.com/#quickstart" target="_blank"&gt;その手順&lt;/a&gt;に従いインストールしていく。
+
+&lt;pre&gt;
+python3 -m pip install "pelican[markdown]"
+mkdir -p ~/projects/yoursite
+cd ~/projects/yoursite
+pelican-quickstart
+&lt;/pre&gt;
+
+クイックスタート、まじ便利。書かれてる内容に従って「はい」か「いいえ」を選択していくだけで、勝手に環境を整えて Pelican サイトを準備してくれる。天才。これでもうサイト出来たも同然。はい次。
+
+## 記事つくる
+
+これも &lt;a href="https://getpelican.com/#quickstart" target="_blank"&gt;公式サイトのディレクション&lt;/a&gt; に従って記事書いていく。一旦うまくいってるか確認するためのテスト的なものでも大丈夫。
+
+&lt;pre&gt;
+Title: 記事のタイトル
+Date: YYYY-MM-DD
+Category: カテゴリ名（英語表記のほうがいいかも）
+Slug: URLになるやつ（英語表記がいい）
+&lt;/pre&gt;
+
+クイックスタートで日本語を選択しているとはいえ、中身は全く日本語化はされていないので、例えばカテゴリ名を「炒飯」とかにしてしまうと、自動作成されるURLが「chao-fan.html」となってしまう。要は日本語発音ではなく中国語発音になってしまう感じ。（カタカナも試したけど、普通にローマ字読みで出力されたっぽい。）気持ちが悪いので素直に英語表記でカテゴリ名を作っていく。
+
+## ページを確認
+
+記事を作成したら、ちゃんとサイトとして表示されるかどうか確認する。 Pelican 公式サイトだと、最新バージョンでは &lt;code&gt;pelican -r -l&lt;/code&gt; するだけで、サイト作成と表示、更新もしてくれるっぽい。けど従来の
+
+&lt;pre&gt;
+pelican content または make html
+make serve
+（別窓で make regenerate も合わせて）
+&lt;/pre&gt;
+
+で全然大丈夫っぽい。手癖（？）で上記のほうが慣れてるけど、全部一気にやってくれる &lt;code&gt;pelican -r -l&lt;/code&gt; のほうが便利よねきっと。←
+
+次回はテーマ反映をやっていく。
+&lt;/main&gt;</content><category term="Pelican"></category></entry></feed>
