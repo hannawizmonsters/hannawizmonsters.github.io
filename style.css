@@ -4,6 +4,7 @@
   --main: #C3628D;
   --text: #333;
   --white: #FFF;
+  --whitegray: #F5F5F5;
 }
 
 /* RESET
@@ -153,6 +154,7 @@ body {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   color: var(--text);
+  background: var(--whitegray);
 }
 a {
   font-weight: 600;
@@ -205,7 +207,8 @@ h3 {
   margin: 0 0 2em;
   img {
     width: 100%;
-    border: 5px solid var(--white);
+    margin: 0 0 1em;
+    border: 5px solid var(--whitegray);
     border-radius: 1em;
   }
   :hover img { opacity: 0.7; }
