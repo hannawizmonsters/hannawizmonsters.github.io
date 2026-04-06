@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+:root {
+  --main: #C3628D;
+  --text: #333;
+}
+
 /* RESET
 ---------------------------------- */
 *,
@@ -147,7 +152,10 @@ body {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-a { font-weight: 600; }
+a {
+  font-weight: 600;
+  color: var(--main);
+}
 a:hover { text-decoration: underline; }
 p {
   margin: 0 0 1em;
@@ -171,4 +179,8 @@ main {
   @media (max-width: 768px) {
     width: 85%;
   }
+}
+footer {
+  font-size: 0.9em;
+  text-align: center;
 }
