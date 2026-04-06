@@ -144,7 +144,7 @@ th {
 /* BASE 
 ---------------------------------- */
 body {
-  font-family: "Noto Sans JP", Helvetica, Arial, "Hiragino Sans JP", sans-serif;
+  font-family: "Noto Sans JP", "Helvetica Neue", Helvetica, "Hiragino Sans JP", sans-serif;
   line-height: 1.7;
   letter-spacing: 1px;
   font-weight: 350;
@@ -187,12 +187,13 @@ h1 {
   color: var(--main);
   border-top: 5px solid var(--main);
   display: inline-block;
-  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 800;
 }
 h2 {
   padding: 0 0 1em;
   font-size: 1.5em;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 .col-box {
   display: -webkit-flex;
@@ -206,6 +207,8 @@ h2 {
   width: 33.3%;
   img { width: 100%; }
 }
+.mini { font-size: 0.8em; }
+ul li { padding: 0 0 0.5em; }
 footer {
   font-size: 0.9em;
   .copy {
