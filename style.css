@@ -163,7 +163,12 @@ a {
 a:hover { text-decoration: underline; }
 p {
   margin: 0 0 1em;
-  text-align: justify;
+  @media (min-width: 769px) {
+    text-align: justify;
+  }
+  @media (max-width: 768px) {
+    text-align: left;
+  }
 }
 
 /* COMMON
@@ -186,11 +191,16 @@ main {
 }
 h1 {
   padding: 0 0 2em;
-  font-size: 3em;
   color: var(--main);
   border-top: 7px solid var(--main);
   display: inline-block;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
+  @media (min-width: 769px) {
+    font-size: 3em;
+  }
+  @media (max-width: 768px) {
+    font-size: 2em;
+  }
 }
 h2 {
   padding: 0 0 1em;
@@ -199,7 +209,7 @@ h2 {
 }
 h3 {
   padding: 0 0 1em;
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 .portfolio {
@@ -208,6 +218,7 @@ h3 {
 }
 .works {
   margin: 0 0 2em;
+  a { font-size: 1.1em; }
   img {
     width: 100%;
     margin: 0 0 1em;
