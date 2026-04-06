@@ -180,6 +180,18 @@ main {
     width: 85%;
   }
 }
+.col-box {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.col3 {
+  width: 33.3%;
+  img { width: 100%; }
+}
 footer {
   font-size: 0.9em;
   text-align: center;
