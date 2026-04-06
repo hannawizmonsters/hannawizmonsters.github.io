@@ -151,6 +151,7 @@ body {
   text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  color: var(--text);
 }
 a {
   font-weight: 600;
@@ -172,13 +173,18 @@ main {
 }
 .content {
   margin: 0 auto;
-  padding: 9em 0 5em;
+  padding: 0 0 5em;
   @media (min-width: 769px) {
     width: 670px;
   }
   @media (max-width: 768px) {
     width: 85%;
   }
+}
+h1 {
+  padding: 0 0 3em;
+  font-size: 5em;
+  color: var(--main);
 }
 .col-box {
   display: -webkit-flex;
@@ -194,5 +200,7 @@ main {
 }
 footer {
   font-size: 0.9em;
-  text-align: center;
+  .copy {
+    text-align: center;
+  }
 }
