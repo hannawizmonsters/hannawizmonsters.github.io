@@ -195,17 +195,15 @@ h2 {
   font-size: 1.5em;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
+.works {
+  img { width: 100%; }
+}
 .col-box {
   display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  align-items: center;
 }
 .col3 {
-  width: 33.3%;
-  img { width: 100%; }
+  width: 33%;
 }
 .mini { font-size: 0.8em; }
 ul li { padding: 0 0 0.5em; }
