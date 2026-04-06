@@ -3,6 +3,7 @@
 :root {
   --main: #C3628D;
   --text: #333;
+  --white: #FFF;
 }
 
 /* RESET
@@ -196,7 +197,11 @@ h2 {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 .works {
-  img { width: 100%; }
+  img {
+    width: 100%;
+    border: 5px solid var(--white);
+    border-radius: 1em;
+  }
 }
 .col-box {
   display: -webkit-flex;
